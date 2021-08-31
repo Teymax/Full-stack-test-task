@@ -1,0 +1,34 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["prettier", "no-only-tests"],
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "sourceType": "script",
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "strict": ["error", "global"],
+    "no-undef": [2, { "typeof": true }],
+    "curly": ["error", "all"],
+    "no-param-reassign": 0,
+    "arrow-parens": ["error", "always"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-only-tests/no-only-tests": "error",
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArray": false,
+        "allowArrowFunction": false,
+        "allowAnonymousClass": false,
+        "allowAnonymousFunction": false,
+        "allowCallExpression": true, // The true value here is for backward compatibility
+        "allowLiteral": false,
+        "allowObject": false
+      }
+    ]
+  }
+}

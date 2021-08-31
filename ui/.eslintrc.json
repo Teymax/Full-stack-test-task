@@ -1,0 +1,25 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier", "no-only-tests"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-undef": [2, { "typeof": true }],
+    "curly": ["error", "all"],
+    "no-param-reassign": 0,
+    "arrow-parens": ["error", "always"],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-only-tests/no-only-tests": "error",
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArray": false,
+        "allowArrowFunction": false,
+        "allowAnonymousClass": false,
+        "allowAnonymousFunction": false,
+        "allowCallExpression": true, // The true value here is for backward compatibility
+        "allowLiteral": false,
+        "allowObject": false
+      }
+    ]
+  }
+}
